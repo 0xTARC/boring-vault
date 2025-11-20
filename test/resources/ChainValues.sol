@@ -8,6 +8,7 @@ contract ChainValues {
     using AddressToBytes32Lib for address;
     using AddressToBytes32Lib for bytes32;
 
+    string public constant sepolia = "sepolia";
     string public constant mainnet = "mainnet";
     string public constant polygon = "polygon";
     string public constant bsc = "bsc";
