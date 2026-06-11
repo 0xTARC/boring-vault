@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-pragma solidity 0.8.21;
+pragma solidity >=0.8.21;
 
 import {ERC20} from "@solmate/tokens/ERC20.sol";
 import {AddressToBytes32Lib} from "src/helper/AddressToBytes32Lib.sol";
@@ -8,6 +8,7 @@ contract ChainValues {
     using AddressToBytes32Lib for address;
     using AddressToBytes32Lib for bytes32;
 
+    string public constant sepolia = "sepolia";
     string public constant mainnet = "mainnet";
     string public constant polygon = "polygon";
     string public constant bsc = "bsc";
@@ -15,6 +16,13 @@ contract ChainValues {
     string public constant arbitrum = "arbitrum";
     string public constant optimism = "optimism";
     string public constant base = "base";
+    string public constant zircuit = "zircuit";
+    string public constant mantle = "mantle";
+    string public constant linea = "linea";
+    string public constant scroll = "scroll";
+    string public constant fraxtal = "fraxtal";
+    string public constant corn = "corn";
+    string public constant holesky = "holesky";
 
     // Bridging constants.
     uint64 public constant ccipArbitrumChainSelector = 4949039107694359620;
